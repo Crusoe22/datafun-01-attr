@@ -13,7 +13,7 @@ services_offered: list = ["Data Analysis", "Python Scripting", "Insider trading"
 inflation_of_countries: list = [4.2, 2.1, 3.9, 5.0, 4.7, 12.1, 4.9, 7.5]
 
 # Convert non-string variables in to strings using f-string.
-current_customers_string: str = f"Active Projects: {current_customers}"
+current_customers_string: str = f"Current number of clients: {current_customers}"
 allied_with_united_states_string: str = f"Trade with the United Stated: {allied_with_united_states}"
 average_inflation_rate_string: str = f"Average Inflation Rate: {average_inflation_rate_worldwide}"
 inflation_of_countries_string: str = f"Inflation list: {inflation_of_countries}"
