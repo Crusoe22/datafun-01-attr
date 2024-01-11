@@ -1,9 +1,10 @@
-''' This module provides a reusable byline for the author's services. Re write this so it describes the code and whats it doing'''
+''' This script defines variables related to Nolan's European Government Analytics 
+    and performs data analysis on inflation rates of European countries.'''
 
 import math
 import statistics
 
-
+# Company inforation
 company_name: str = "Nolan's European Government Analytics"
 current_customers: int = 8
 allied_with_united_states: bool = True
@@ -11,9 +12,7 @@ average_inflation_rate_worldwide: float = 3.3
 services_offered: list = ["Data Analysis", "Python Scripting", "Insider trading"]
 inflation_of_countries: list = [4.2, 2.1, 3.9, 5.0, 4.7, 12.1, 4.9, 7.5]
 
-
-#Convert none string variables in to strings using f-string.
-
+# Convert non-string variables in to strings using f-string.
 current_customers_string: str = f"Active Projects: {current_customers}"
 allied_with_united_states_string: str = f"Trade with the United Stated: {allied_with_united_states}"
 average_inflation_rate_string: str = f"Average Inflation Rate: {average_inflation_rate_worldwide}"
@@ -21,8 +20,7 @@ inflation_of_countries_string: str = f"Inflation list: {inflation_of_countries}"
 services_offered_string: str = f"Services offered: {services_offered}"
 
 
-#Find the statistics for numeric list. 
-
+# Find the statistics for numeric list. 
 smallest = min(inflation_of_countries)
 largest = max(inflation_of_countries)
 total = sum(inflation_of_countries)
@@ -32,7 +30,7 @@ mode = statistics.mode(inflation_of_countries)
 median = statistics.median(inflation_of_countries)
 standard_deviation = statistics.stdev(inflation_of_countries)
 
-#Display the statistics found.
+# Turn the statistics found into an f-string
 stats_string: str = f"""
 Descriptive Statistics for European Country's inflation rate:
   Smallest: {smallest}
@@ -45,7 +43,7 @@ Descriptive Statistics for European Country's inflation rate:
   Standard Deviation: {standard_deviation}
 """
 
-#Define the byline string.
+# Define the byline string.
 byline: str = f"""
 {company_name}
 {current_customers_string}
@@ -55,7 +53,7 @@ byline: str = f"""
 """
 
 
-#Call main() function to test code
+# Call main() function to test the code.
 def main():
     ''' Display all output'''
     print(company_name)
